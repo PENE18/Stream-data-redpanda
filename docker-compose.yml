@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  data-generator:
+    build:
+      context: ./src
+      dockerfile: ./Dockerfile
+    container_name: data_generator
+    volumes:
+      - ./src:/opt/src
